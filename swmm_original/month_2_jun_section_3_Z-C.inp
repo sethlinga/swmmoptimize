@@ -1,0 +1,1245 @@
+[TITLE]
+;;Project Title/Notes
+
+[OPTIONS]
+;;Option             Value
+FLOW_UNITS           CMS
+INFILTRATION         MODIFIED_GREEN_AMPT
+FLOW_ROUTING         DYNWAVE
+LINK_OFFSETS         ELEVATION
+MIN_SLOPE            0
+ALLOW_PONDING        NO
+SKIP_STEADY_STATE    NO
+
+START_DATE           05/01/2021
+START_TIME           00:00:00
+REPORT_START_DATE    05/01/2021
+REPORT_START_TIME    05:00:00
+END_DATE             05/01/2021
+END_TIME             23:59:00
+SWEEP_START          05/01
+SWEEP_END            05/01
+DRY_DAYS             0
+REPORT_STEP          01:00:00
+WET_STEP             01:00:00
+DRY_STEP             01:00:00
+ROUTING_STEP         0:00:30 
+
+
+INERTIAL_DAMPING     PARTIAL
+NORMAL_FLOW_LIMITED  BOTH
+FORCE_MAIN_EQUATION  H-W
+VARIABLE_STEP        0.75
+LENGTHENING_STEP     10
+MIN_SURFAREA         1.167
+MAX_TRIALS           8
+HEAD_TOLERANCE       0.0015
+SYS_FLOW_TOL         5
+LAT_FLOW_TOL         5
+MINIMUM_STEP         0.5
+THREADS              4
+
+[EVAPORATION]
+;;Data Source    Parameters
+;;-------------- ----------------
+CONSTANT         0.0
+DRY_ONLY         NO
+
+[JUNCTIONS]
+;;Name           Elevation  MaxDepth   InitDepth  SurDepth   Aponded   
+;;-------------- ---------- ---------- ---------- ---------- ----------
+J1               21         1.2        0          0          0         
+MC-Z             20.995     1.2        0          0          0         
+MC-1             20.991     1.2        0          0          0         
+MC-1A            20.782     1.2        0          0          0         
+MC-2             20.679     1.2        0          0          0         
+MC-2A            20.526     1.2        0          0          0         
+MC-3             20.381     1.2        0          0          0         
+MC-3A            20.262     1.2        0          0          0         
+MC-3B            20.122     1.2        0          0          0         
+LAT-A            19.986     1.2        0          0          0         
+MC-4             19.856     1.2        0          0          0         
+MC-5             19.816     1.2        0          0          0         
+MC-5A            19.812     1.2        0          0          0         
+MC-5B            19.751     1.2        0          0          0         
+MC-6             19.702     1.2        0          0          0         
+MC-6A            19.604     1.2        0          0          0         
+MC-6B            19.580     1.2        0          0          0         
+MC-7             19.458     1.2        0          0          0         
+MC-8             19.390     1.2        0          0          0         
+MC-9             19.342     1.2        0          0          0         
+MC-10            19.266     1.2        0          0          0         
+MC-10A           19.221     1.2        0          0          0         
+MC-10B           19.142     1.2        0          0          0         
+MC-10C           19.136     1.2        0          0          0         
+MC-10D           19.117     1.2        0          0          0         
+MC-10E           19.089     1.2        0          0          0         
+MC-10F           18.928     1.2        0          0          0         
+LAT-B            18.855     1.2        0          0          0         
+MC-11            18.805     1.1        0          0          0         
+MC-12            18.746     1.1        0          0          0         
+MC-13            18.672     1.1        0          0          0         
+MC-13A           18.628     1.1        0          0          0         
+MC-13B           18.536     1.1        0          0          0         
+MC-13C           18.507     1.1        0          0          0         
+MC-14            18.483     1.1        0          0          0         
+MC-14A           18.416     1.1        0          0          0         
+MC-14B           18.411     1.1        0          0          0         
+MC-14C           18.313     1.1        0          0          0         
+MC-14D           18.242     1.1        0          0          0         
+MC-14E           18.213     1.1        0          0          0         
+MC-15            18.128     1.1        0          0          0         
+LAT-C            18.037     1          0          0          0         
+J1-1             20.991     0.4        0          0          0         
+J2-1             20.9885    0.4        0          0          0         
+J1-1A            21.282     0.4        0          0          0         
+J2-1A            21.2795    0.4        0          0          0         
+J1-2             20.679     0.4        0          0          0         
+J2-2             20.6765    0.4        0          0          0         
+J1-2A            21.026     0.4        0          0          0         
+J2-2A            21.0235    0.4        0          0          0         
+J1-3             20.381     0.4        0          0          0         
+J2-3             20.3785    0.4        0          0          0         
+J1-3A            20.762     0.4        0          0          0         
+J2-3A            20.7595    0.4        0          0          0         
+J1-3B            20.622     0.4        0          0          0         
+J2-3B            20.6195    0.4        0          0          0         
+J1-A             19.986     0.8        0          0          0         
+J2-A             19.9835    0.8        0          0          0         
+J1-4             19.856     0.4        0          0          0         
+J2-4             19.8535    0.4        0          0          0         
+J1-5             19.816     0.4        0          0          0         
+J2-5             19.8135    0.4        0          0          0         
+J1-5A            20.312     0.4        0          0          0         
+J2-5A            20.3095    0.4        0          0          0         
+J1-5B            20.251     0.4        0          0          0         
+J2-5B            20.2485    0.4        0          0          0         
+J1-6             19.702     0.4        0          0          0         
+J2-6             19.6995    0.4        0          0          0         
+J1-6A            20.104     0.4        0          0          0         
+J2-6A            20.1015    0.4        0          0          0         
+J1-6B            20.080     0.4        0          0          0         
+J2-6B            20.0775    0.4        0          0          0         
+J1-7             19.458     0.4        0          0          0         
+J2-7             19.4555    0.4        0          0          0         
+J1-8             19.390     0.4        0          0          0         
+J2-8             19.3875    0.4        0          0          0         
+J1-9             19.342     0.4        0          0          0         
+J2-9             19.3395    0.4        0          0          0         
+J1-10            19.266     0.4        0          0          0         
+J2-10            19.2635    0.4        0          0          0         
+J1-10A           19.721     0.4        0          0          0         
+J2-10A           19.7185    0.4        0          0          0         
+J1-10B           19.642     0.4        0          0          0         
+J2-10B           19.6395    0.4        0          0          0         
+J1-10C           19.636     0.4        0          0          0         
+J2-10C           19.6335    0.4        0          0          0         
+J1-10D           19.617     0.4        0          0          0         
+J2-10D           19.6145    0.4        0          0          0         
+J1-10E           19.589     0.4        0          0          0         
+J2-10E           19.5865    0.4        0          0          0         
+J1-10F           19.428     0.4        0          0          0         
+J2-10F           19.4255    0.4        0          0          0         
+J1-B             18.855     0.6        0          0          0         
+J2-B             18.8525    0.6        0          0          0         
+J1-11            18.805     0.4        0          0          0         
+J2-11            18.8025    0.4        0          0          0         
+J1-12            18.746     0.4        0          0          0         
+J2-12            18.7435    0.4        0          0          0         
+J1-13            18.672     0.4        0          0          0         
+J2-13            18.6695    0.4        0          0          0         
+J1-13A           19.128     0.4        0          0          0         
+J2-13A           19.1255    0.4        0          0          0         
+J1-13B           19.036     0.4        0          0          0         
+J2-13B           19.0335    0.4        0          0          0         
+J1-13C           19.007     0.4        0          0          0         
+J2-13C           19.0045    0.4        0          0          0         
+J1-14            18.483     0.4        0          0          0         
+J2-14            18.4805    0.4        0          0          0         
+J1-14A           18.916     0.4        0          0          0         
+J2-14A           18.9135    0.4        0          0          0         
+J1-14B           18.911     1.2        0          0          0         
+J2-14B           18.9085    0.4        0          0          0         
+J1-14C           18.813     0.4        0          0          0         
+J2-14C           18.8105    0.4        0          0          0         
+J1-14D           18.742     0.4        0          0          0         
+J2-14D           18.7395    0.4        0          0          0         
+J1-14E           18.713     0.4        0          0          0         
+J2-14E           18.7105    0.4        0          0          0         
+J1-15            18.128     0.4        0          0          0         
+J2-15            18.1255    0.4        0          0          0         
+J1-C             18.037     0.8        0          0          0         
+J2-C             18.0345    0.8        0          0          0         
+JZ-1             21.495     0.4        0          0          0         
+JZ-2             21.4925    0.4        0          0          0         
+
+[OUTFALLS]
+;;Name           Elevation  Type       Stage Data       Gated    Route To        
+;;-------------- ---------- ---------- ---------------- -------- ----------------
+OF-Z             0          FREE                        NO                       
+OF-1             10         FREE                        NO                       
+OF-1A            10         FREE                        NO                       
+OF-2             10         FREE                        NO                       
+OF-2A            10         FREE                        NO                       
+OF-3             10         FREE                        NO                       
+OF-3A            10         FREE                        NO                       
+OF-3B            10         FREE                        NO                       
+OF-A             10         FREE                        NO                       
+OF-4             10         FREE                        NO                       
+OF-5             10         FREE                        NO                       
+OF-5A            10         FREE                        NO                       
+OF-5B            10         FREE                        NO                       
+OF-6             10         FREE                        NO                       
+OF-6A            10         FREE                        NO                       
+OF-6B            10         FREE                        NO                       
+OF-7             10         FREE                        NO                       
+OF-8             10         FREE                        NO                       
+OF-9             10         FREE                        NO                       
+OF-10            10         FREE                        NO                       
+OF-10A           10         FREE                        NO                       
+OF-10B           10         FREE                        NO                       
+OF-10C           10         FREE                        NO                       
+OF-10D           10         FREE                        NO                       
+OF-10E           10         FREE                        NO                       
+OF-10F           10         FREE                        NO                       
+OF-B             10         FREE                        NO                       
+OF-11            10         FREE                        NO                       
+OF-12            10         FREE                        NO                       
+OF-13            10         FREE                        NO                       
+OF-13A           10         FREE                        NO                       
+OF-13B           10         FREE                        NO                       
+OF-13C           10         FREE                        NO                       
+OF-14            10         FREE                        NO                       
+OF-14A           10         FREE                        NO                       
+OF-14B           10         FREE                        NO                       
+OF-14C           10         FREE                        NO                       
+OF-14D           10         FREE                        NO                       
+OF-14E           10         FREE                        NO                       
+OF-15            10         FREE                        NO                       
+OF-C             10         FREE                        NO                       
+MC-15A           17.955     FREE                        NO                       
+
+[STORAGE]
+;;Name           Elev.    MaxDepth   InitDepth  Shape      Curve Type/Params            SurDepth  Fevap    Psi      Ksat     IMD     
+;;-------------- -------- ---------- ----------- ---------- ---------------------------- --------- --------          -------- --------
+ZamoraDam        21       9.5        9          TABULAR    ZamoraDam                    0         0       
+
+[CONDUITS]
+;;Name           From Node        To Node          Length     Roughness  InOffset   OutOffset  InitFlow   MaxFlow   
+;;-------------- ---------------- ---------------- ---------- ---------- ---------- ---------- ---------- ----------
+C-Z-1            MC-Z             MC-1             123.5      0.015      *          *          0          0         
+C-1-1A           MC-1             MC-1A            15         0.015      *          *          0          0         
+C-1A-2           MC-1A            MC-2             348.2      0.015      *          *          0          0         
+C-2-2A           MC-2             MC-2A            171.8      0.015      *          *          0          0         
+C-2A-3           MC-2A            MC-3             255.0      0.015      *          *          0          0         
+C-3-3A           MC-3             MC-3A            241.2      0.015      *          *          0          0         
+C-3A-3B          MC-3A            MC-3B            199.4      0.015      *          *          0          0         
+C-3B-A           MC-3B            LAT-A            232.4      0.015      *          *          0          0         
+C-4-5            MC-4             MC-5             215.6      0.015      *          *          0          0         
+C-5-5A           MC-5             MC-5A            81.5       0.015      *          *          0          0         
+C-5A-5B          MC-5A            MC-5B            7          0.015      *          *          0          0         
+C-5B-6           MC-5B            MC-6             121.5      0.015      *          *          0          0         
+C-6-6A           MC-6             MC-6A            98         0.015      *          *          0          0         
+C-6A-6B          MC-6A            MC-6B            197.0      0.015      *          *          0          0         
+C-6B-7           MC-6B            MC-7             47         0.015      *          *          0          0         
+C-7-8            MC-7             MC-8             244.5      0.015      *          *          0          0         
+C-8-9            MC-8             MC-9             136.5      0.015      *          *          0          0         
+C-9-10           MC-9             MC-10            95.5       0.015      *          *          0          0         
+C-10-10A         MC-10            MC-10A           152.1      0.015      *          *          0          0         
+C-10A-10B        MC-10A           MC-10B           90.9       0.015      *          *          0          0         
+C-10B-10C        MC-10B           MC-10C           158.1      0.015      *          *          0          0         
+C-10C-10D        MC-10C           MC-10D           11.9       0.015      *          *          0          0         
+C-10D-10E        MC-10D           MC-10E           36.4       0.015      *          *          0          0         
+C-10E-10F        MC-10E           MC-10F           57.6       0.015      *          *          0          0         
+C-10F-B          MC-10F           LAT-B            321.5      0.015      *          *          0          0         
+C-B-11           LAT-B            MC-11            146.5      0.015      *          *          0          0         
+C-11-12          MC-11            MC-12            99.5       0.015      *          *          0          0         
+C-12-13          MC-12            MC-13            117        0.015      *          *          0          0         
+C-13-13A         MC-13            MC-13A           149.5      0.015      *          *          0          0         
+C-13A-13B        MC-13A           MC-13B           87.5       0.015      *          *          0          0         
+C-13B-13C        MC-13B           MC-13C           183        0.015      *          *          0          0         
+C-13C-14         MC-13C           MC-14            58.3       0.015      *          *          0          0         
+C-14-14A         MC-14            MC-14A           47.7       0.015      *          *          0          0         
+C-14A-14B        MC-14A           MC-14B           134        0.015      *          *          0          0         
+C-14B-14C        MC-14B           MC-14C           11.6       0.015      *          *          0          0         
+C-14C-14D        MC-14C           MC-14D           195.4      0.015      *          *          0          0         
+C-14D-14E        MC-14D           MC-14E           142.5      0.015      *          *          0          0         
+C-14E-15         MC-14E           MC-15            57.5       0.015      *          *          0          0         
+C-15-C           MC-15            LAT-C            170        0.015      *          *          0          0         
+C1-Z             JZ-1             JZ-2             5          0.018      *          *          0          0         
+C2-Z             JZ-2             OF-Z             100        0.018      *          *          0          0         
+C1-1             J1-1             J2-1             5          0.018      *          *          0          0         
+C2-1             J2-1             OF-1             100        0.018      *          *          0          0         
+C1-1A            J1-1A            J2-1A            5          0.018      *          *          0          0         
+C2-1A            J2-1A            OF-1A            100        0.018      *          *          0          0         
+C1-2             J1-2             J2-2             5          0.018      *          *          0          0         
+C2-2             J2-2             OF-2             100        0.018      *          *          0          0         
+C1-2A            J1-2A            J2-2A            5          0.018      *          *          0          0         
+C2-2A            J2-2A            OF-2A            100        0.018      *          *          0          0         
+C1-3             J1-3             J2-3             5          0.018      *          *          0          0         
+C2-3             J2-3             OF-3             100        0.015      *          *          0          0         
+C1-3A            J1-3A            J2-3A            5          0.018      *          *          0          0         
+C2-3A            J2-3A            OF-3A            100        0.018      *          *          0          0         
+C1-3B            J1-3B            J2-3B            5          0.018      *          *          0          0         
+C2-3B            J2-3B            OF-3B            100        0.018      *          *          0          0         
+C1-A             J1-A             J2-A             5          0.025      *          *          0          0         
+C2-A             J2-A             OF-A             100        0.025      *          *          0          0         
+C1-4             J1-4             J2-4             5          0.018      *          *          0          0         
+C2-4             J2-4             OF-4             100        0.018      *          *          0          0         
+C1-5             J1-5             J2-5             5          0.018      *          *          0          0         
+C2-5             J2-5             OF-5             100        0.018      *          *          0          0         
+C1-5A            J1-5A            J2-5A            5          0.018      *          *          0          0         
+C2-5A            J2-5A            OF-5A            100        0.018      *          *          0          0         
+C1-5B            J1-5B            J2-5B            5          0.018      *          *          0          0         
+C2-5B            J2-5B            OF-5B            100        0.018      *          *          0          0         
+C1-6             J1-6             J2-6             5          0.018      *          *          0          0         
+C2-6             J2-6             OF-6             100        0.018      *          *          0          0         
+C1-6A            J1-6A            J2-6A            5          0.018      *          *          0          0         
+C2-6A            J2-6A            OF-6A            100        0.018      *          *          0          0         
+C1-6B            J1-6B            J2-6B            5          0.018      *          *          0          0         
+C2-6B            J2-6B            OF-6B            100        0.018      *          *          0          0         
+C1-7             J1-7             J2-7             5          0.018      *          *          0          0         
+C2-7             J2-7             OF-7             100        0.018      *          *          0          0         
+C1-8             J1-8             J2-8             5          0.018      *          *          0          0         
+C2-8             J2-8             OF-8             100        0.018      *          *          0          0         
+C1-9             J1-9             J2-9             5          0.018      *          *          0          0         
+C2-9             J2-9             OF-9             100        0.018      *          *          0          0         
+C1-10            J1-10            J2-10            100        0.018      *          *          0          0         
+C2-10            J2-10            OF-10            100        0.018      *          *          0          0         
+C1-10A           J1-10A           J2-10A           5          0.018      *          *          0          0         
+C2-10A           J2-10A           OF-10A           100        0.018      *          *          0          0         
+C1-10B           J1-10B           J2-10B           5          0.018      *          *          0          0         
+C2-10B           J2-10B           OF-10B           100        0.018      *          *          0          0         
+C1-10C           J1-10C           J2-10C           5          0.018      *          *          0          0         
+C2-10C           J2-10C           OF-10C           100        0.018      *          *          0          0         
+C1-10D           J1-10D           J2-10D           5          0.018      *          *          0          0         
+C2-10D           J2-10D           OF-10D           100        0.018      *          *          0          0         
+C1-10E           J1-10E           J2-10E           5          0.018      *          *          0          0         
+C2-10E           J2-10E           OF-10E           100        0.018      *          *          0          0         
+C1-10F           J1-10F           J2-10F           5          0.018      *          *          0          0         
+C2-10F           J2-10F           OF-10F           100        0.018      *          *          0          0         
+C1-B             J1-B             J2-B             5          0.025      *          *          0          0         
+C2-B             J2-B             OF-B             100        0.025      *          *          0          0         
+C1-11            J1-11            J2-11            5          0.018      *          *          0          0         
+C2-11            J2-11            OF-11            100        0.018      *          *          0          0         
+C1-12            J1-12            J2-12            5          0.015      *          *          0          0         
+C2-12            J2-12            OF-12            100        0.018      *          *          0          0         
+C1-13            J1-13            J2-13            5          0.018      *          *          0          0         
+C2-13            J2-13            OF-13            100        0.018      *          *          0          0         
+C1-13A           J1-13A           J2-13A           5          0.018      *          *          0          0         
+C2-13A           J2-13A           OF-13A           100        0.018      *          *          0          0         
+C1-13B           J1-13B           J2-13B           5          0.018      *          *          0          0         
+C2-13B           J2-13B           OF-13B           100        0.018      *          *          0          0         
+C1-13C           J1-13C           J2-13C           5          0.018      *          *          0          0         
+C2-13C           J2-13C           OF-13C           100        0.018      *          *          0          0         
+C1-14            J1-14            J2-14            5          0.018      *          *          0          0         
+C2-14            J2-14            OF-14            100        0.018      *          *          0          0         
+C1-14A           J1-14A           J2-14A           5          0.018      *          *          0          0         
+C2-14A           J2-14A           OF-14A           100        0.018      *          *          0          0         
+C1-14B           J1-14B           J2-14B           5          0.018      *          *          0          0         
+C2-14B           J2-14B           OF-14B           100        0.018      *          *          0          0         
+C1-14C           J1-14C           J2-14C           5          0.018      *          *          0          0         
+C2-14C           J2-14C           OF-14C           100        0.018      *          *          0          0         
+C1-14D           J1-14D           J2-14D           5          0.015      *          *          0          0         
+C2-14D           J2-14D           OF-14D           100        0.018      *          *          0          0         
+C1-14E           J1-14E           J2-14E           5          0.018      *          *          0          0         
+C2-14E           J2-14E           OF-14E           100        0.018      *          *          0          0         
+C1-15            J1-15            J2-15            5          0.018      *          *          0          0         
+C2-15            J2-15            OF-15            100        0.018      *          *          0          0         
+C1-C             J1-C             J2-C             5          0.025      *          *          0          0         
+C2-C             J2-C             OF-C             100        0.025      *          *          0          0         
+C-0-Z            J1               MC-Z             13.5       0.015      *          *          0          0         
+C-C-15A          LAT-C            MC-15A           181.4      0.015      *          *          0          0         
+C-A-4            LAT-A            MC-4             227.4      0.015      *          *          0          0         
+
+[ORIFICES]
+;;Name           From Node        To Node          Type         Offset     Qcoeff     Gated    CloseTime 
+;;-------------- ---------------- ---------------- ------------ ---------- ---------- -------- ----------
+OR-0             ZamoraDam        J1               SIDE         *          0.65       NO       0.5       
+OR-Z             MC-Z             JZ-1             SIDE         21.495     0.65       NO       0         
+OR-1             MC-1             J1-1             SIDE         *          0.65       NO       0         
+OR-1A            MC-1A            J1-1A            SIDE         21.282     0.65       NO       0         
+OR-2             MC-2             J1-2             SIDE         *          0.65       NO       0         
+OR-2A            MC-2A            J1-2A            SIDE         21.026     0.65       NO       0         
+OR-3             MC-3             J1-3             SIDE         *          0.65       NO       0         
+OR-3A            MC-3A            J1-3A            SIDE         20.762     0.65       NO       0         
+OR-3B            MC-3B            J1-3B            SIDE         20.622     0.65       NO       0         
+OR-A             LAT-A            J1-A             SIDE         *          0.65       NO       0         
+OR-4             MC-4             J1-4             SIDE         *          0.65       NO       0         
+OR-5             MC-5             J1-5             SIDE         *          0.65       NO       0         
+OR-5A            MC-5A            J1-5A            SIDE         20.312     0.65       NO       0         
+OR-5B            MC-5B            J1-5B            SIDE         20.251     0.65       NO       0         
+OR-6             MC-6             J1-6             SIDE         *          0.65       NO       0         
+OR-6A            MC-6A            J1-6A            SIDE         20.104     0.65       NO       0         
+OR-6B            MC-6B            J1-6B            SIDE         20.080     0.65       NO       0         
+OR-7             MC-7             J1-7             SIDE         *          0.65       NO       0         
+OR-8             MC-8             J1-8             SIDE         *          0.65       NO       0         
+OR-9             MC-9             J1-9             SIDE         *          0.65       NO       0         
+OR-10            MC-10            J1-10            SIDE         *          0.65       NO       0         
+OR-10A           MC-10A           J1-10A           SIDE         19.721     0.65       NO       0         
+OR-10B           MC-10B           J1-10B           SIDE         19.642     0.65       NO       0         
+OR-10C           MC-10C           J1-10C           SIDE         19.636     0.65       NO       0         
+OR-10D           MC-10D           J1-10D           SIDE         19.617     0.65       NO       0         
+OR-10E           MC-10E           J1-10E           SIDE         19.589     0.65       NO       0         
+OR-10F           MC-10F           J1-10F           SIDE         19.428     0.65       NO       0         
+OR-B             LAT-B            J1-B             SIDE         *          0.65       NO       0         
+OR-11            MC-11            J1-11            SIDE         *          0.65       NO       0         
+OR-12            MC-12            J1-12            SIDE         *          0.65       NO       0         
+OR-13            MC-13            J1-13            SIDE         *          0.65       NO       0         
+OR-13A           MC-13A           J1-13A           SIDE         19.128     0.65       NO       0         
+OR-13B           MC-13B           J1-13B           SIDE         19.036     0.65       NO       0         
+OR-13C           MC-13C           J1-13C           SIDE         19.007     0.65       NO       0         
+OR-14            MC-14            J1-14            SIDE         *          0.65       NO       0         
+OR-14A           MC-14A           J1-14A           SIDE         18.916     0.65       NO       0         
+OR-14B           MC-14B           J1-14B           SIDE         18.911     0.65       NO       0         
+OR-14C           MC-14C           J1-14C           SIDE         18.813     0.65       NO       0         
+OR-14D           MC-14D           J1-14D           SIDE         18.742     0.65       NO       0         
+OR-14E           MC-14E           J1-14E           SIDE         18.713     0.65       NO       0         
+OR-15            MC-15            J1-15            SIDE         *          0.65       NO       0         
+OR-C             LAT-C            J1-C             SIDE         *          0.65       NO       0         
+
+[XSECTIONS]
+;;Link           Shape        Geom1            Geom2      Geom3      Geom4      Barrels    Culvert   
+;;-------------- ------------ ---------------- ---------- ---------- ---------- ---------- ----------
+C-Z-1            RECT_OPEN    1.2              1.65       0          0          1                    
+C-1-1A           RECT_OPEN    1.2              1.65       0          0          1                    
+C-1A-2           RECT_OPEN    1.2              1.65       0          0          1                    
+C-2-2A           RECT_OPEN    1.2              1.65       0          0          1                    
+C-2A-3           RECT_OPEN    1.2              1.65       0          0          1                    
+C-3-3A           RECT_OPEN    1.2              1.65       0          0          1                    
+C-3A-3B          RECT_OPEN    1.2              1.65       0          0          1                    
+C-3B-A           RECT_OPEN    1.2              1.65       0          0          1                    
+C-4-5            RECT_OPEN    1.2              1.65       0          0          1                    
+C-5-5A           TRAPEZOIDAL  1.2              1.65       1          1          1                    
+C-5A-5B          TRAPEZOIDAL  1.2              1.65       1          1          1                    
+C-5B-6           TRAPEZOIDAL  1.2              1.65       1          1          1                    
+C-6-6A           TRAPEZOIDAL  1.2              1.65       1          1          1                    
+C-6A-6B          TRAPEZOIDAL  1.2              1.65       1          1          1                    
+C-6B-7           TRAPEZOIDAL  1.2              1.65       1          1          1                    
+C-7-8            TRAPEZOIDAL  1.2              1.65       1          1          1                    
+C-8-9            TRAPEZOIDAL  1.2              1.65       1          1          1                    
+C-9-10           TRAPEZOIDAL  1.2              1.65       1          1          1                    
+C-10-10A         TRAPEZOIDAL  1.2              1.65       1          1          1                    
+C-10A-10B        TRAPEZOIDAL  1.2              1.65       1          1          1                    
+C-10B-10C        TRAPEZOIDAL  1.2              1.65       1          1          1                    
+C-10C-10D        TRAPEZOIDAL  1.2              1.65       1          1          1                    
+C-10D-10E        TRAPEZOIDAL  1.2              1.65       1          1          1                    
+C-10E-10F        TRAPEZOIDAL  1.2              1.65       1          1          1                    
+C-10F-B          TRAPEZOIDAL  1.2              1.65       1          1          1                    
+C-B-11           TRAPEZOIDAL  1.1              1.5        1          1          1                    
+C-11-12          TRAPEZOIDAL  1.1              1.5        1          1          1                    
+C-12-13          TRAPEZOIDAL  1.1              1.5        1          1          1                    
+C-13-13A         TRAPEZOIDAL  1.1              1.5        1          1          1                    
+C-13A-13B        TRAPEZOIDAL  1.1              1.5        1          1          1                    
+C-13B-13C        TRAPEZOIDAL  1.1              1.5        1          1          1                    
+C-13C-14         TRAPEZOIDAL  1.1              1.5        1          1          1                    
+C-14-14A         TRAPEZOIDAL  1.1              1.5        1          1          1                    
+C-14A-14B        TRAPEZOIDAL  1.1              1.5        1          1          1                    
+C-14B-14C        TRAPEZOIDAL  1.1              1.5        1          1          1                    
+C-14C-14D        TRAPEZOIDAL  1.1              1.5        1          1          1                    
+C-14D-14E        TRAPEZOIDAL  1.1              1.5        1          1          1                    
+C-14E-15         TRAPEZOIDAL  1.1              1.5        1          1          1                    
+C-15-C           TRAPEZOIDAL  1.0              1.4        1          1          1                    
+C1-Z             RECT_OPEN    0.4              0.4        0          0          1                    
+C2-Z             RECT_OPEN    0.4              0.4        0          0          1                    
+C1-1             RECT_OPEN    0.4              0.4        0          0          1                    
+C2-1             RECT_OPEN    0.4              0.4        0          0          1                    
+C1-1A            RECT_OPEN    0.4              0.4        0          0          1                    
+C2-1A            RECT_OPEN    0.4              0.4        0          0          1                    
+C1-2             RECT_OPEN    0.4              0.4        0          0          1                    
+C2-2             RECT_OPEN    0.4              0.4        0          0          1                    
+C1-2A            RECT_OPEN    0.4              0.4        0          0          1                    
+C2-2A            RECT_OPEN    0.4              0.4        0          0          1                    
+C1-3             RECT_OPEN    0.4              0.4        0          0          1                    
+C2-3             RECT_OPEN    5                3          0          0          1                    
+C1-3A            RECT_OPEN    0.4              0.4        0          0          1                    
+C2-3A            RECT_OPEN    0.4              0.4        0          0          1                    
+C1-3B            RECT_OPEN    0.4              0.4        0          0          1                    
+C2-3B            RECT_OPEN    0.4              0.4        0          0          1                    
+C1-A             RECT_OPEN    0.8              0.45       0          0          1                    
+C2-A             RECT_OPEN    0.8              0.45       0          0          1                    
+C1-4             RECT_OPEN    0.4              0.4        0          0          1                    
+C2-4             RECT_OPEN    0.4              0.4        0          0          1                    
+C1-5             RECT_OPEN    0.4              0.4        0          0          1                    
+C2-5             RECT_OPEN    0.4              0.4        0          0          1                    
+C1-5A            RECT_OPEN    0.4              0.4        0          0          1                    
+C2-5A            RECT_OPEN    0.4              0.4        0          0          1                    
+C1-5B            RECT_OPEN    0.4              0.4        0          0          1                    
+C2-5B            RECT_OPEN    0.4              0.4        0          0          1                    
+C1-6             RECT_OPEN    0.4              0.4        0          0          1                    
+C2-6             RECT_OPEN    0.4              0.4        0          0          1                    
+C1-6A            RECT_OPEN    0.4              0.4        0          0          1                    
+C2-6A            RECT_OPEN    0.4              0.4        0          0          1                    
+C1-6B            RECT_OPEN    0.4              0.4        0          0          1                    
+C2-6B            RECT_OPEN    0.4              0.4        0          0          1                    
+C1-7             RECT_OPEN    0.4              0.4        0          0          1                    
+C2-7             RECT_OPEN    0.4              0.4        0          0          1                    
+C1-8             RECT_OPEN    0.4              0.4        0          0          1                    
+C2-8             RECT_OPEN    0.4              0.4        0          0          1                    
+C1-9             RECT_OPEN    0.4              0.4        0          0          1                    
+C2-9             RECT_OPEN    0.4              0.4        0          0          1                    
+C1-10            RECT_OPEN    0.4              0.4        0          0          1                    
+C2-10            RECT_OPEN    0.4              0.4        0          0          1                    
+C1-10A           RECT_OPEN    0.4              0.4        0          0          1                    
+C2-10A           RECT_OPEN    0.4              0.4        0          0          1                    
+C1-10B           RECT_OPEN    0.4              0.4        0          0          1                    
+C2-10B           RECT_OPEN    0.4              0.4        0          0          1                    
+C1-10C           RECT_OPEN    0.4              0.4        0          0          1                    
+C2-10C           RECT_OPEN    0.4              0.4        0          0          1                    
+C1-10D           RECT_OPEN    0.4              0.4        0          0          1                    
+C2-10D           RECT_OPEN    0.4              0.4        0          0          1                    
+C1-10E           RECT_OPEN    0.4              0.4        0          0          1                    
+C2-10E           RECT_OPEN    0.4              0.4        0          0          1                    
+C1-10F           RECT_OPEN    0.4              0.4        0          0          1                    
+C2-10F           RECT_OPEN    0.4              0.4        0          0          1                    
+C1-B             RECT_OPEN    0.6              0.6        0          0          1                    
+C2-B             RECT_OPEN    0.6              0.6        0          0          1                    
+C1-11            RECT_OPEN    0.4              0.4        0          0          1                    
+C2-11            RECT_OPEN    0.4              0.4        0          0          1                    
+C1-12            RECT_OPEN    0.4              0.4        0          0          1                    
+C2-12            RECT_OPEN    0.4              0.4        0          0          1                    
+C1-13            RECT_OPEN    0.4              0.4        0          0          1                    
+C2-13            RECT_OPEN    0.4              0.4        0          0          1                    
+C1-13A           RECT_OPEN    0.4              0.4        0          0          1                    
+C2-13A           RECT_OPEN    0.4              0.4        0          0          1                    
+C1-13B           RECT_OPEN    0.4              0.4        0          0          1                    
+C2-13B           RECT_OPEN    0.4              0.4        0          0          1                    
+C1-13C           RECT_OPEN    0.4              0.4        0          0          1                    
+C2-13C           RECT_OPEN    0.4              0.4        0          0          1                    
+C1-14            RECT_OPEN    0.4              0.4        0          0          1                    
+C2-14            RECT_OPEN    0.4              0.4        0          0          1                    
+C1-14A           RECT_OPEN    0.4              0.4        0          0          1                    
+C2-14A           RECT_OPEN    0.4              0.4        0          0          1                    
+C1-14B           RECT_OPEN    0.4              0.4        0          0          1                    
+C2-14B           RECT_OPEN    0.4              0.4        0          0          1                    
+C1-14C           RECT_OPEN    0.4              0.4        0          0          1                    
+C2-14C           RECT_OPEN    0.4              0.4        0          0          1                    
+C1-14D           RECT_OPEN    0.4              0.4        0          0          1                    
+C2-14D           RECT_OPEN    0.4              0.4        0          0          1                    
+C1-14E           RECT_OPEN    0.4              0.4        0          0          1                    
+C2-14E           RECT_OPEN    0.4              0.4        0          0          1                    
+C1-15            RECT_OPEN    0.4              0.4        0          0          1                    
+C2-15            RECT_OPEN    0.4              0.4        0          0          1                    
+C1-C             RECT_OPEN    0.8              0.9        0          0          1                    
+C2-C             RECT_OPEN    0.8              0.9        0          0          1                    
+C-0-Z            RECT_OPEN    1.2              1.65       0          0          1                    
+C-C-15A          TRAPEZOIDAL  1                1.4        1          1          1                    
+C-A-4            RECT_OPEN    1.2              1.65       0          0          1                    
+OR-0             CIRCULAR     0.75             0          0          0
+OR-Z             CIRCULAR     0.381            0          0          0
+OR-1             CIRCULAR     0.381            0          0          0
+OR-1A            CIRCULAR     0.3              0          0          0
+OR-2             CIRCULAR     0.381            0          0          0
+OR-2A            CIRCULAR     0.3              0          0          0
+OR-3             CIRCULAR     0.381            0          0          0
+OR-3A            CIRCULAR     0.3              0          0          0
+OR-3B            CIRCULAR     0.3              0          0          0
+OR-A             CIRCULAR     0.61             0          0          0
+OR-4             CIRCULAR     0.381            0          0          0
+OR-5             CIRCULAR     0.381            0          0          0
+OR-5A            CIRCULAR     0.3              0          0          0
+OR-5B            CIRCULAR     0.3              0          0          0
+OR-6             CIRCULAR     0.3              0          0          0
+OR-6A            CIRCULAR     0.3              0          0          0
+OR-6B            CIRCULAR     0.3              0          0          0
+OR-7             CIRCULAR     0.381            0          0          0
+OR-8             CIRCULAR     0.3              0          0          0
+OR-9             CIRCULAR     0.381            0          0          0
+OR-10            CIRCULAR     0.3              0          0          0
+OR-10A           CIRCULAR     0.3              0          0          0
+OR-10B           CIRCULAR     0.3              0          0          0
+OR-10C           CIRCULAR     0.3              0          0          0
+OR-10D           CIRCULAR     0.3              0          0          0
+OR-10E           CIRCULAR     0.3              0          0          0
+OR-10F           CIRCULAR     0.3              0          0          0
+OR-B             CIRCULAR     0.61             0          0          0
+OR-11            CIRCULAR     0.3              0          0          0
+OR-12            CIRCULAR     0.381            0          0          0
+OR-13            CIRCULAR     0.3              0          0          0
+OR-13A           CIRCULAR     0.3              0          0          0
+OR-13B           CIRCULAR     0.3              0          0          0
+OR-13C           CIRCULAR     0.3              0          0          0
+OR-14            CIRCULAR     0.61             0          0          0
+OR-14A           CIRCULAR     0.3              0          0          0
+OR-14B           CIRCULAR     0.3              0          0          0
+OR-14C           CIRCULAR     0.3              0          0          0
+OR-14D           CIRCULAR     0.3              0          0          0
+OR-14E           CIRCULAR     0.3              0          0          0
+OR-15            CIRCULAR     0.3              0          0          0
+OR-C             CIRCULAR     0.61             0          0          0
+
+[CONTROLS]
+RULE OR-0
+IF SIMULATION TIME >= 5.0
+AND SIMULATION TIME <= 17.0
+THEN ORIFICE OR-0 SETTING = 0.382
+ELSE ORIFICE OR-0 SETTING = 0.0
+
+RULE OR-Z
+IF SIMULATION DATE = 5/1/2021
+AND SIMULATION TIME >= 7.92283793675
+AND SIMULATION TIME <= 10.0
+THEN ORIFICE OR-Z SETTING = 1
+ELSE ORIFICE OR-Z SETTING = 0.0
+
+RULE OR-1
+IF SIMULATION DATE = 5/1/2021
+AND SIMULATION TIME >= 9.72868830463
+AND SIMULATION TIME <= 15.6907128293
+AND NODE J2-1 DEPTH <> 0.03
+THEN ORIFICE OR-1 SETTING = PID 0.05 0.1 0.0
+ELSE ORIFICE OR-1 SETTING = 0.0
+
+RULE OR-1A
+IF SIMULATION DATE = 5/1/2021
+AND SIMULATION TIME >= 10.0
+AND SIMULATION TIME <= 10.0
+THEN ORIFICE OR-1A SETTING = 1
+ELSE ORIFICE OR-1A SETTING = 0.0
+
+RULE OR-2
+IF SIMULATION DATE = 5/1/2021
+AND SIMULATION TIME >= 7.87789720704
+AND SIMULATION TIME <= 11.2117383397
+AND NODE J2-2 DEPTH <> 0.05
+THEN ORIFICE OR-2 SETTING = PID 0.05 0.1 0.0
+ELSE ORIFICE OR-2 SETTING = 0.0
+
+RULE OR-2A
+IF SIMULATION DATE = 5/1/2021
+AND SIMULATION TIME >= 10.0
+AND SIMULATION TIME <= 10.0295107785
+THEN ORIFICE OR-2A SETTING = 1
+ELSE ORIFICE OR-2A SETTING = 0.0
+
+RULE OR-3
+IF SIMULATION DATE = 5/1/2021
+AND SIMULATION TIME >= 9.93186947485
+AND SIMULATION TIME <= 10.0
+AND NODE J2-3 DEPTH <> 0.05
+THEN ORIFICE OR-3 SETTING = PID 0.05 0.1 0.0
+ELSE ORIFICE OR-3 SETTING = 0.0
+
+RULE OR-3A
+IF SIMULATION DATE = 5/1/2021
+AND SIMULATION TIME >= 9.10573161486
+AND SIMULATION TIME <= 10.0
+THEN ORIFICE OR-3A SETTING = 1
+ELSE ORIFICE OR-3A SETTING = 0.0
+
+RULE OR-3B
+IF SIMULATION DATE = 5/1/2021
+AND SIMULATION TIME >= 8.95426421844
+AND SIMULATION TIME <= 10.5633209982
+THEN ORIFICE OR-3B SETTING = 1
+ELSE ORIFICE OR-3B SETTING = 0.0
+
+RULE OR-A
+IF SIMULATION DATE = 5/1/2021
+AND SIMULATION TIME >= 5.0
+AND SIMULATION TIME <= 22.0
+AND NODE J2-A DEPTH <> 0.4
+THEN ORIFICE OR-A SETTING = PID 0.4 0.1 0.0
+ELSE ORIFICE OR-A SETTING = 0.0
+
+RULE OR-4
+IF SIMULATION DATE = 5/1/2021
+AND SIMULATION TIME >= 7.55359978679
+AND SIMULATION TIME <= 10.0
+AND NODE J2-4 DEPTH <> 0.03
+THEN ORIFICE OR-4 SETTING = PID 0.05 0.1 0.0
+ELSE ORIFICE OR-4 SETTING = 0.0
+
+RULE OR-5
+IF SIMULATION DATE = 5/1/2021
+AND SIMULATION TIME >= 9.91190496265
+AND SIMULATION TIME <= 12.7120830763
+AND NODE J2-5 DEPTH <> 0.03
+THEN ORIFICE OR-5 SETTING = PID 0.05 0.1 0.0
+ELSE ORIFICE OR-5 SETTING = 0.0
+
+RULE OR-5A
+IF SIMULATION DATE = 5/1/2021
+AND SIMULATION TIME >= 6.37955522882
+AND SIMULATION TIME <= 22.0
+THEN ORIFICE OR-5A SETTING = 1
+ELSE ORIFICE OR-5A SETTING = 0.0
+
+RULE OR-5B
+IF SIMULATION DATE = 5/1/2021
+AND SIMULATION TIME >= 6.54201661692
+AND SIMULATION TIME <= 10.3386284354
+THEN ORIFICE OR-5B SETTING = 1
+ELSE ORIFICE OR-5B SETTING = 0.0
+
+RULE OR-6
+IF SIMULATION DATE = 5/1/2021
+AND SIMULATION TIME >= 8.29745347312
+AND SIMULATION TIME <= 10.0
+AND NODE J2-6 DEPTH <> 0.03
+THEN ORIFICE OR-6 SETTING = PID 0.05 0.1 0.0
+ELSE ORIFICE OR-6 SETTING = 0.0
+
+RULE OR-6A
+IF SIMULATION DATE = 5/1/2021
+AND SIMULATION TIME >= 7.74771115415
+AND SIMULATION TIME <= 11.4132103779
+THEN ORIFICE OR-6A SETTING = 1
+ELSE ORIFICE OR-6A SETTING = 0.0
+
+RULE OR-6B
+IF SIMULATION DATE = 5/1/2021
+AND SIMULATION TIME >= 6.00455092947
+AND SIMULATION TIME <= 22.0
+THEN ORIFICE OR-6B SETTING = 1
+ELSE ORIFICE OR-6B SETTING = 0.0
+
+RULE OR-7
+IF SIMULATION DATE = 5/1/2021
+AND SIMULATION TIME >= 7.93366616529
+AND SIMULATION TIME <= 11.2652683697
+AND NODE J2-7 DEPTH <> 0.03
+THEN ORIFICE OR-7 SETTING = PID 0.05 0.1 0.0
+ELSE ORIFICE OR-7 SETTING = 0.0
+
+RULE OR-8
+IF SIMULATION DATE = 5/1/2021
+AND SIMULATION TIME >= 8.1583687248
+AND SIMULATION TIME <= 10.0
+AND NODE J2-8 DEPTH <> 0.03
+THEN ORIFICE OR-8 SETTING = PID 0.05 0.1 0.0
+ELSE ORIFICE OR-8 SETTING = 0.0
+
+RULE OR-9
+IF SIMULATION DATE = 5/1/2021
+AND SIMULATION TIME >= 9.84734243942
+AND SIMULATION TIME <= 12.8080547161
+AND NODE J2-9 DEPTH <> 0.04
+THEN ORIFICE OR-9 SETTING = PID 0.05 0.1 0.0
+ELSE ORIFICE OR-9 SETTING = 0.0
+
+RULE OR-10
+IF SIMULATION DATE = 5/1/2021
+AND SIMULATION TIME >= 8.81292058705
+AND SIMULATION TIME <= 10.0
+AND NODE J2-10 DEPTH <> 0.03
+THEN ORIFICE OR-10 SETTING = PID 0.05 0.1 0.0
+ELSE ORIFICE OR-10 SETTING = 0.0
+
+RULE OR-10A
+IF SIMULATION DATE = 5/1/2021
+AND SIMULATION TIME >= 5.0
+AND SIMULATION TIME <= 22.0
+THEN ORIFICE OR-10A SETTING = 1
+ELSE ORIFICE OR-10A SETTING = 0.0
+
+RULE OR-10B
+IF SIMULATION DATE = 5/1/2021
+AND SIMULATION TIME >= 5.79647416084
+AND SIMULATION TIME <= 22.0
+THEN ORIFICE OR-10B SETTING = 1
+ELSE ORIFICE OR-10B SETTING = 0.0
+
+RULE OR-10C
+IF SIMULATION DATE = 5/1/2021
+AND SIMULATION TIME >= 5.64425449642
+AND SIMULATION TIME <= 12.8472738437
+THEN ORIFICE OR-10C SETTING = 1
+ELSE ORIFICE OR-10C SETTING = 0.0
+
+RULE OR-10D
+IF SIMULATION DATE = 5/1/2021
+AND SIMULATION TIME >= 9.37854761563
+AND SIMULATION TIME <= 11.9375962918
+THEN ORIFICE OR-10D SETTING = 1
+ELSE ORIFICE OR-10D SETTING = 0.0
+
+RULE OR-10E
+IF SIMULATION DATE = 5/1/2021
+AND SIMULATION TIME >= 5.13518241226
+AND SIMULATION TIME <= 14.5225075613
+THEN ORIFICE OR-10E SETTING = 1
+ELSE ORIFICE OR-10E SETTING = 0.0
+
+RULE OR-10F
+IF SIMULATION DATE = 5/1/2021
+AND SIMULATION TIME >= 5.6261516294
+AND SIMULATION TIME <= 11.6600843358
+THEN ORIFICE OR-10F SETTING = 1
+ELSE ORIFICE OR-10F SETTING = 0.0
+
+RULE OR-B
+IF SIMULATION DATE = 5/1/2021
+AND SIMULATION TIME >= 8.95938127173
+AND SIMULATION TIME <= 12.5714564343
+AND NODE J2-B DEPTH <> 0.08
+THEN ORIFICE OR-B SETTING = PID 0.1 0.1 0.0
+ELSE ORIFICE OR-B SETTING = 0.0
+
+RULE OR-11
+IF SIMULATION DATE = 5/1/2021
+AND SIMULATION TIME >= 10.0
+AND SIMULATION TIME <= 13.7305971967
+AND NODE J2-11 DEPTH <> 0.07
+THEN ORIFICE OR-11 SETTING = PID 0.1 0.1 0.0
+ELSE ORIFICE OR-11 SETTING = 0.0
+
+RULE OR-12
+IF SIMULATION DATE = 5/1/2021
+AND SIMULATION TIME >= 10.0
+AND SIMULATION TIME <= 19.0133148259
+AND NODE J2-12 DEPTH <> 0.05
+THEN ORIFICE OR-12 SETTING = PID 0.1 0.1 0.0
+ELSE ORIFICE OR-12 SETTING = 0.0
+
+RULE OR-13
+IF SIMULATION DATE = 5/1/2021
+AND SIMULATION TIME >= 10.0
+AND SIMULATION TIME <= 18.3210534813
+AND NODE J2-13 DEPTH <> 0.05
+THEN ORIFICE OR-13 SETTING = PID 0.1 0.1 0.0
+ELSE ORIFICE OR-13 SETTING = 0.0
+
+RULE OR-13A
+IF SIMULATION DATE = 5/1/2021
+AND SIMULATION TIME >= 9.87189601958
+AND SIMULATION TIME <= 10.9345935357
+THEN ORIFICE OR-13A SETTING = 1
+ELSE ORIFICE OR-13A SETTING = 0.0
+
+RULE OR-13B
+IF SIMULATION DATE = 5/1/2021
+AND SIMULATION TIME >= 9.95108638019
+AND SIMULATION TIME <= 10.0
+THEN ORIFICE OR-13B SETTING = 1
+ELSE ORIFICE OR-13B SETTING = 0.0
+
+RULE OR-13C
+IF SIMULATION DATE = 5/1/2021
+AND SIMULATION TIME >= 8.87591968433
+AND SIMULATION TIME <= 10.9163895083
+THEN ORIFICE OR-13C SETTING = 1
+ELSE ORIFICE OR-13C SETTING = 0.0
+
+RULE OR-14
+IF SIMULATION DATE = 5/1/2021
+AND SIMULATION TIME >= 10.0
+AND SIMULATION TIME <= 22.0
+AND NODE J2-14 DEPTH <> 0.07
+THEN ORIFICE OR-14 SETTING = PID 0.1 0.1 0.0
+ELSE ORIFICE OR-14 SETTING = 0.0
+
+RULE OR-14A
+IF SIMULATION DATE = 5/1/2021
+AND SIMULATION TIME >= 9.90383543445
+AND SIMULATION TIME <= 10.0
+THEN ORIFICE OR-14A SETTING = 1
+ELSE ORIFICE OR-14A SETTING = 0.0
+
+RULE OR-14B
+IF SIMULATION DATE = 5/1/2021
+AND SIMULATION TIME >= 10.0
+AND SIMULATION TIME <= 10.0
+THEN ORIFICE OR-14B SETTING = 1
+ELSE ORIFICE OR-14B SETTING = 0.0
+
+RULE OR-14C
+IF SIMULATION DATE = 5/1/2021
+AND SIMULATION TIME >= 9.9542353941
+AND SIMULATION TIME <= 20.8380125313
+THEN ORIFICE OR-14C SETTING = 1
+ELSE ORIFICE OR-14C SETTING = 0.0
+
+RULE OR-14D
+IF SIMULATION DATE = 5/1/2021
+AND SIMULATION TIME >= 6.86439166849
+AND SIMULATION TIME <= 14.8235327049
+THEN ORIFICE OR-14D SETTING = 1
+ELSE ORIFICE OR-14D SETTING = 0.0
+
+RULE OR-14E
+IF SIMULATION DATE = 5/1/2021
+AND SIMULATION TIME >= 5.0
+AND SIMULATION TIME <= 24.0
+THEN ORIFICE OR-14E SETTING = 1
+ELSE ORIFICE OR-14E SETTING = 0.0
+
+RULE OR-15
+IF SIMULATION DATE = 5/1/2021
+AND SIMULATION TIME >= 5.5
+AND SIMULATION TIME <= 24.0
+AND NODE J2-15 DEPTH <> 0.05
+THEN ORIFICE OR-15 SETTING = PID 0.1 0.1 0.0
+ELSE ORIFICE OR-15 SETTING = 0.0
+
+RULE OR-C
+IF SIMULATION DATE = 5/1/2021
+AND SIMULATION TIME >= 6.5
+AND SIMULATION TIME <= 24.0
+AND NODE J2-C DEPTH <> 0.45
+THEN ORIFICE OR-C SETTING = PID 0.5 0.1 0.0
+ELSE ORIFICE OR-C SETTING = 0.0
+
+[CURVES]
+;;Name           Type       X-Value    Y-Value   
+;;-------------- ---------- ---------- ----------
+TalibonDamIntake Rating     0          0         
+TalibonDamIntake            0.01       0.27991   
+TalibonDamIntake            0.02       0.30072   
+TalibonDamIntake            0.03       0.32153   
+TalibonDamIntake            0.04       0.34234   
+TalibonDamIntake            0.05       0.36315   
+TalibonDamIntake            0.06       0.38396   
+TalibonDamIntake            0.07       0.40477   
+TalibonDamIntake            0.08       0.42558   
+TalibonDamIntake            0.09       0.44639   
+TalibonDamIntake            0.10       0.4672    
+TalibonDamIntake            0.11       0.48801   
+TalibonDamIntake            0.12       0.50882   
+TalibonDamIntake            0.13       0.52963   
+TalibonDamIntake            0.14       0.55044   
+TalibonDamIntake            0.15       0.57125   
+TalibonDamIntake            0.16       0.59206   
+TalibonDamIntake            0.17       0.61287   
+TalibonDamIntake            0.18       0.63368   
+TalibonDamIntake            0.19       0.65449   
+TalibonDamIntake            0.20       0.6753    
+TalibonDamIntake            0.21       0.69611   
+TalibonDamIntake            0.22       0.71692   
+TalibonDamIntake            0.23       0.73773   
+TalibonDamIntake            0.24       0.75854   
+TalibonDamIntake            0.25       0.77935   
+TalibonDamIntake            0.26       0.80016   
+TalibonDamIntake            0.27       0.82097   
+TalibonDamIntake            0.28       0.84178   
+TalibonDamIntake            0.29       0.86259   
+TalibonDamIntake            0.30       0.8834    
+TalibonDamIntake            0.31       0.90421   
+TalibonDamIntake            0.32       0.92502   
+TalibonDamIntake            0.33       0.94583   
+TalibonDamIntake            0.34       0.96664   
+TalibonDamIntake            0.35       0.98745   
+TalibonDamIntake            0.36       1.00826   
+TalibonDamIntake            0.37       1.02907   
+TalibonDamIntake            0.38       1.04988   
+TalibonDamIntake            0.39       1.07069   
+TalibonDamIntake            0.40       1.0915    
+TalibonDamIntake            0.41       1.11231   
+TalibonDamIntake            0.42       1.13312   
+TalibonDamIntake            0.43       1.15393   
+TalibonDamIntake            0.44       1.17474   
+TalibonDamIntake            0.45       1.19555   
+TalibonDamIntake            0.46       1.21636   
+TalibonDamIntake            0.47       1.23717   
+TalibonDamIntake            0.48       1.25798   
+TalibonDamIntake            0.49       1.27879   
+TalibonDamIntake            0.50       1.2996    
+TalibonDamIntake            0.51       1.32041   
+TalibonDamIntake            0.52       1.34122   
+TalibonDamIntake            0.53       1.36203   
+TalibonDamIntake            0.54       1.38284   
+TalibonDamIntake            0.55       1.40365   
+;
+;Zamora dam rule curve
+ZamoraDam        Storage    1.5        1000000.00
+ZamoraDam                   2          1279545.45
+ZamoraDam                   2.5        1559090.91
+ZamoraDam                   3          1838636.36
+ZamoraDam                   3.5        2118181.82
+ZamoraDam                   4          2397727.27
+ZamoraDam                   4.5        2677272.73
+ZamoraDam                   5          2956818.18
+ZamoraDam                   5.5        3236363.63
+ZamoraDam                   6          3515909.06
+ZamoraDam                   6.5        3795454.54
+ZamoraDam                   7          4075000.00
+ZamoraDam                   7.5        4612500.00
+ZamoraDam                   8          5150000.00
+ZamoraDam                   8.5        5666500.00
+ZamoraDam                   9          6183000.00
+ZamoraDam                   9.5        6527567.00
+
+[REPORT]
+;;Reporting Options
+SUBCATCHMENTS ALL
+NODES ALL
+LINKS ALL
+
+[TAGS]
+Node       OF-Z             ZABIMOPA        
+Node       OF-1             ZABIMOPA        
+Node       OF-1A            ZABIMOPA        
+Node       OF-2             ZABIMOPA        
+Node       OF-2A            ZABIMOPA        
+Node       OF-3             ZABIMOPA        
+Node       OF-3A            ZABIMOPA        
+Node       OF-3B            ZABIMOPA        
+Node       OF-A             ZABIMOPA,BUNLAYA,PANAS
+Node       OF-4             ZABIMOPA        
+Node       OF-5             ZABIMOPA        
+Node       OF-5A            ZABIMOPA        
+Node       OF-5B            ZABIMOPA        
+Node       OF-6             ZABIMOPA        
+Node       OF-6A            ZABIMOPA        
+Node       OF-6B            ZABIMOPA        
+Node       OF-7             ZABIMOPA        
+Node       OF-8             ZABIMOPA        
+Node       OF-9             ZABIMOPA        
+Node       OF-10            ZABIMOPA        
+Node       OF-10A           ZABIMOPA        
+Node       OF-10B           ZABIMOPA        
+Node       OF-10C           BALFA           
+Node       OF-10D           BALFA           
+Node       OF-10E           BALFA           
+Node       OF-10F           BALFA           
+Node       OF-B             BALFA           
+Node       OF-11            BALFA           
+Node       OF-12            BALFA           
+Node       OF-13            BALFA           
+Node       OF-13A           BALFA           
+Node       OF-13B           BALFA           
+Node       OF-13C           BALFA           
+Node       OF-14            BALFA           
+Node       OF-14A           BALFA           
+Node       OF-14B           BALFA           
+Node       OF-14C           BALFA           
+Node       OF-14D           JOSSIDCO        
+Node       OF-14E           JOSSIDCO        
+Node       OF-15            JOSSIDCO        
+Node       OF-C             JOSSIDCO        
+Link       OR-Z             ZABIMOPA        
+Link       OR-1             ZABIMOPA        
+Link       OR-1A            ZABIMOPA        
+Link       OR-2             ZABIMOPA        
+Link       OR-2A            ZABIMOPA        
+Link       OR-3             ZABIMOPA        
+Link       OR-3A            ZABIMOPA        
+Link       OR-3B            ZABIMOPA        
+Link       OR-A             ZABIMOPA,BUNLAYA,PANAS
+Link       OR-4             ZABIMOPA        
+Link       OR-5             ZABIMOPA        
+Link       OR-5A            ZABIMOPA        
+Link       OR-5B            ZABIMOPA        
+Link       OR-6             ZABIMOPA        
+Link       OR-6A            ZABIMOPA        
+Link       OR-6B            ZABIMOPA        
+Link       OR-7             ZABIMOPA        
+Link       OR-8             ZABIMOPA        
+Link       OR-9             ZABIMOPA        
+Link       OR-10            ZABIMOPA        
+Link       OR-10A           ZABIMOPA        
+Link       OR-10B           ZABIMOPA        
+Link       OR-10C           BALFA           
+Link       OR-10D           BALFA           
+Link       OR-10E           BALFA           
+Link       OR-10F           BALFA           
+Link       OR-B             BALFA           
+Link       OR-11            BALFA           
+Link       OR-12            BALFA           
+Link       OR-13            BALFA           
+Link       OR-13A           BALFA           
+Link       OR-13B           BALFA           
+Link       OR-13C           BALFA           
+Link       OR-14            BALFA           
+Link       OR-14A           BALFA           
+Link       OR-14B           BALFA           
+Link       OR-14C           BALFA           
+Link       OR-14D           JOSSIDCO        
+Link       OR-14E           JOSSIDCO        
+Link       OR-15            JOSSIDCO        
+Link       OR-C             JOSSIDCO        
+
+[MAP]
+DIMENSIONS -2075.015 0.000 12075.015 10000.000
+Units      None
+
+[COORDINATES]
+;;Node           X-Coord            Y-Coord           
+;;-------------- ------------------ ------------------
+J1               1800.232           3175.813          
+MC-Z             1853.949           3213.560          
+MC-1             1936.101           3268.230          
+MC-1A            2095.219           3357.144          
+MC-2             2281.622           3283.131          
+MC-2A            2418.684           3335.215          
+MC-3             2764.078           3428.416          
+MC-3A            3029.978           3513.394          
+MC-3B            3611.118           3296.837          
+LAT-A            3871.535           3209.118          
+MC-4             4090.833           3099.469          
+MC-5             4145.657           3033.680          
+MC-5A            4211.447           2951.443          
+MC-5B            4277.236           2885.653          
+MC-6             4375.921           2822.605          
+MC-6A            4652.785           2880.171          
+MC-6B            4852.894           2740.368          
+MC-7             5077.675           2573.153          
+MC-8             5294.232           2285.324          
+MC-9             5447.741           2153.745          
+MC-10            5573.837           2112.627          
+MC-10A           5752.017           2074.250          
+MC-10B           5979.539           2087.956          
+MC-10C           6122.083           2131.816          
+MC-10D           6308.486           2098.921          
+MC-10E           6434.583           1981.048          
+MC-10F           6593.574           1926.223          
+LAT-B            6766.271           1890.587          
+MC-11            6911.557           1909.776          
+MC-12            7191.162           2074.250          
+MC-13            7380.307           2063.285          
+MC-13A           7525.592           2225.017          
+MC-13B           7662.653           2329.184          
+MC-13C           7755.855           2479.951          
+MC-14            7788.750           2581.377          
+MC-14A           7827.127           2677.320          
+MC-14B           7870.986           2781.487          
+MC-14C           7917.587           2888.394          
+MC-14D           7972.412           2978.855          
+MC-14E           8057.390           3052.868          
+MC-15            8147.850           3102.210          
+LAT-C            8235.570           3135.105          
+J1-1             1954.046           3229.677          
+J2-1             1973.234           3187.188          
+J1-1A            2095.219           3311.914          
+J2-1A            2096.589           3263.943          
+J1-2             2281.622           3244.754          
+J2-2             2284.364           3189.930          
+J1-2A            2439.243           3294.096          
+J2-2A            2463.914           3250.237          
+J1-3             2765.449           3387.298          
+J2-3             2764.078           3344.809          
+J1-3A            3027.236           3465.423          
+J2-3A            3027.236           3422.934          
+J1-3B            3572.741           3274.908          
+J2-3B            3530.252           3250.237          
+J1-A             3867.423           3124.140          
+J2-A             3859.199           3080.280          
+J1-4             4122.357           3141.958          
+J2-4             4152.511           3188.559          
+J1-5             4186.776           3074.798          
+J2-5             4223.782           3124.140          
+J1-5A            4185.405           2915.807          
+J2-5A            4152.511           2881.541          
+J1-5B            4310.131           2925.401          
+J2-5B            4341.655           2963.778          
+J1-6             4369.068           2769.151          
+J2-6             4356.732           2722.550          
+J1-6A            4682.938           2930.883          
+J2-6A            4698.015           2973.373          
+J1-6B            4813.146           2682.802          
+J2-6B            4763.804           2630.719          
+J1-7             5122.905           2638.943          
+J2-7             5164.024           2701.991          
+J1-8             5257.225           2246.947          
+J2-8             5216.107           2208.570          
+J1-9             5468.300           2225.017          
+J2-9             5487.489           2299.030          
+J1-10            5556.019           2063.285          
+J2-10            5536.831           2022.166          
+J1-10A           5739.682           2038.614          
+J2-10A           5723.234           2000.237          
+J1-10B           5948.015           2123.592          
+J2-10B           5917.861           2175.675          
+J1-10C           6139.901           2181.158          
+J2-10C           6153.607           2241.465          
+J1-10D           6342.752           2164.710          
+J2-10D           6375.646           2208.570          
+J1-10E           6474.331           2027.649          
+J2-10E           6504.484           2066.026          
+J1-10F           6592.203           1882.364          
+J2-10F           6592.203           1830.280          
+J1-B             6764.901           1830.280          
+J2-B             6770.383           1775.456          
+J1-11            6885.515           1967.342          
+J2-11            6860.844           2011.201          
+J1-12            7187.050           2131.816          
+J2-12            7192.532           2194.864          
+J1-13            7406.348           2016.684          
+J2-13            7447.467           1983.789          
+J1-13A           7551.633           2194.864          
+J2-13A           7587.269           2170.193          
+J1-13B           7707.883           2312.737          
+J2-13B           7757.225           2293.548          
+J1-13C           7699.660           2501.881          
+J2-13C           7628.388           2515.587          
+J1-14            7847.686           2567.671          
+J2-14            7905.252           2545.741          
+J1-14A           7869.616           2666.355          
+J2-14A           7935.405           2652.649          
+J1-14B           7817.532           2803.416          
+J2-14B           7773.673           2836.311          
+J1-14C           7962.818           2869.206          
+J2-14C           8014.901           2836.311          
+J1-14D           7910.734           3011.750          
+J2-14D           7853.168           3047.386          
+J1-14E           8072.467           3011.750          
+J2-14E           8086.173           2973.373          
+J1-15            8162.927           3055.609          
+J2-15            8176.633           3003.526          
+J1-C             8253.388           3196.783          
+J2-C             8201.304           3233.789          
+JZ-1             1872.822           3188.516          
+JZ-2             1889.518           3165.287          
+OF-Z             1909.843           3138.429          
+OF-1             1989.682           3144.699          
+OF-1A            2097.960           3215.971          
+OF-2             2285.734           3143.329          
+OF-2A            2494.068           3199.524          
+OF-3             2762.708           3300.949          
+OF-3A            3025.866           3374.962          
+OF-3B            3491.875           3221.454          
+OF-A             3853.717           3019.973          
+OF-4             4188.146           3239.272          
+OF-5             4258.048           3176.223          
+OF-5A            4122.357           2843.164          
+OF-5B            4375.921           3011.750          
+OF-6             4341.655           2660.873          
+OF-6A            4719.945           3017.232          
+OF-6B            4717.203           2575.894          
+OF-7             5202.401           2767.780          
+OF-8             5174.989           2161.969          
+OF-9             5515.752           2374.056          
+OF-10            5512.160           1959.118          
+OF-10A           5701.304           1942.671          
+OF-10B           5879.484           2255.171          
+OF-10C           6148.125           2340.149          
+OF-10D           6422.247           2293.548          
+OF-10E           6553.826           2107.144          
+OF-10F           6600.427           1769.973          
+OF-B             6819.725           1737.079          
+OF-11            6814.243           2068.767          
+OF-12            7178.826           2274.359          
+OF-13            7491.326           1923.482          
+OF-13A           7639.353           2129.074          
+OF-13B           7817.532           2277.101          
+OF-13C           7565.339           2540.258          
+OF-14            7982.006           2512.846          
+OF-14A           8012.160           2627.978          
+OF-14B           7685.953           2871.947          
+OF-14C           8080.690           2792.451          
+OF-14D           7781.896           3069.316          
+OF-14E           8108.103           2926.772          
+OF-15            8204.046           2937.737          
+OF-C             8132.774           3274.908          
+MC-15A           8485.021           3096.728          
+ZamoraDam        1508.420           3287.602          
+
+[VERTICES]
+;;Link           X-Coord            Y-Coord           
+;;-------------- ------------------ ------------------
+C-1-1A           2043.136           3355.774          
+C-2A-3           2610.570           3414.710          
+C-3-3A           2824.386           3438.011          
+C-3A-3B          3114.956           3454.458          
+C-3A-3B          3441.162           3388.669          
+C-3A-3B          3549.440           3413.340          
+C-3B-A           3665.943           3218.712          
+C-10A-10B        5901.414           2059.173          
+C-C-15A          8295.587           3142.149          
+C-A-4            3985.192           3194.323          
+OR-0             1710.221           3249.855          
+
+
+[BACKDROP]
+FILE       "D:\IHE_Delft\Module 14_Thesis\NIA\Talibon\CAD_Files\TALIBON GENERAL LAYOUT OF TURNOUT-1.png"
+DIMENSIONS -2075.015 0.000 12075.015 10000.000

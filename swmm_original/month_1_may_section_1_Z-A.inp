@@ -1,0 +1,430 @@
+[TITLE]
+;;Project Title/Notes
+
+[OPTIONS]
+;;Option             Value
+FLOW_UNITS           CMS
+INFILTRATION         MODIFIED_GREEN_AMPT
+FLOW_ROUTING         DYNWAVE
+LINK_OFFSETS         ELEVATION
+MIN_SLOPE            0
+ALLOW_PONDING        NO
+SKIP_STEADY_STATE    NO
+
+START_DATE           05/01/2021
+START_TIME           00:00:00
+REPORT_START_DATE    05/01/2021
+REPORT_START_TIME    05:00:00
+END_DATE             05/01/2021
+END_TIME             23:59:00
+SWEEP_START          05/01
+SWEEP_END            05/01
+DRY_DAYS             0
+REPORT_STEP          01:00:00
+WET_STEP             01:00:00
+DRY_STEP             01:00:00
+ROUTING_STEP         0:00:30 
+
+
+INERTIAL_DAMPING     PARTIAL
+NORMAL_FLOW_LIMITED  BOTH
+FORCE_MAIN_EQUATION  H-W
+VARIABLE_STEP        0.75
+LENGTHENING_STEP     10
+MIN_SURFAREA         1.167
+MAX_TRIALS           8
+HEAD_TOLERANCE       0.0015
+SYS_FLOW_TOL         5
+LAT_FLOW_TOL         5
+MINIMUM_STEP         0.5
+THREADS              4
+
+[EVAPORATION]
+;;Data Source    Parameters
+;;-------------- ----------------
+CONSTANT         0.0
+DRY_ONLY         NO
+
+[JUNCTIONS]
+;;Name           Elevation  MaxDepth   InitDepth  SurDepth   Aponded   
+;;-------------- ---------- ---------- ---------- ---------- ----------
+J1               21         1.2        0          0          0         
+MC-Z             20.995     1.2        0          0          0         
+MC-1             20.991     1.2        0          0          0         
+MC-1A            20.782     1.2        0          0          0         
+MC-2             20.679     1.2        0          0          0         
+MC-2A            20.526     1.2        0          0          0         
+MC-3             20.381     1.2        0          0          0         
+MC-3A            20.262     1.2        0          0          0         
+MC-3B            20.122     1.2        0          0          0         
+LAT-A            19.986     1.2        0          0          0         
+J1-1             20.991     0.4        0          0          0         
+J2-1             20.9885    0.4        0          0          0         
+J1-1A            21.282     0.4        0          0          0         
+J2-1A            21.2795    0.4        0          0          0         
+J1-2             20.679     0.4        0          0          0         
+J2-2             20.6765    0.4        0          0          0         
+J1-2A            21.026     0.4        0          0          0         
+J2-2A            21.0235    0.4        0          0          0         
+J1-3             20.381     0.4        0          0          0         
+J2-3             20.3785    0.4        0          0          0         
+J1-3A            20.762     0.4        0          0          0         
+J2-3A            20.7595    0.4        0          0          0         
+J1-3B            20.622     0.4        0          0          0         
+J2-3B            20.6195    0.4        0          0          0         
+J1-A             19.986     0.8        0          0          0         
+J2-A             19.9835    0.8        0          0          0         
+JZ-1             21.495     0.4        0          0          0         
+JZ-2             21.4925    0.4        0          0          0         
+
+[OUTFALLS]
+;;Name           Elevation  Type       Stage Data       Gated    Route To        
+;;-------------- ---------- ---------- ---------------- -------- ----------------
+OF-Z             0          FREE                        NO                       
+OF-1             10         FREE                        NO                       
+OF-1A            10         FREE                        NO                       
+OF-2             10         FREE                        NO                       
+OF-2A            10         FREE                        NO                       
+OF-3             10         FREE                        NO                       
+OF-3A            10         FREE                        NO                       
+OF-3B            10         FREE                        NO                       
+OF-A             10         FREE                        NO                       
+MC-4             19.856     FREE                        NO                       
+
+[STORAGE]
+;;Name           Elev.    MaxDepth   InitDepth  Shape      Curve Type/Params            SurDepth  Fevap    Psi      Ksat     IMD     
+;;-------------- -------- ---------- ----------- ---------- ---------------------------- --------- --------          -------- --------
+ZamoraDam        21       9.5        9          TABULAR    ZamoraDam                    0         0       
+
+[CONDUITS]
+;;Name           From Node        To Node          Length     Roughness  InOffset   OutOffset  InitFlow   MaxFlow   
+;;-------------- ---------------- ---------------- ---------- ---------- ---------- ---------- ---------- ----------
+C-Z-1            MC-Z             MC-1             123.5      0.015      *          *          0          0         
+C-1-1A           MC-1             MC-1A            15         0.015      *          *          0          0         
+C-1A-2           MC-1A            MC-2             348.2      0.015      *          *          0          0         
+C-2-2A           MC-2             MC-2A            171.8      0.015      *          *          0          0         
+C-2A-3           MC-2A            MC-3             255.0      0.015      *          *          0          0         
+C-3-3A           MC-3             MC-3A            241.2      0.015      *          *          0          0         
+C-3A-3B          MC-3A            MC-3B            199.4      0.015      *          *          0          0         
+C-3B-A           MC-3B            LAT-A            232.4      0.015      *          *          0          0         
+C1-Z             JZ-1             JZ-2             5          0.018      *          *          0          0         
+C2-Z             JZ-2             OF-Z             100        0.018      *          *          0          0         
+C1-1             J1-1             J2-1             5          0.018      *          *          0          0         
+C2-1             J2-1             OF-1             100        0.018      *          *          0          0         
+C1-1A            J1-1A            J2-1A            5          0.018      *          *          0          0         
+C2-1A            J2-1A            OF-1A            100        0.018      *          *          0          0         
+C1-2             J1-2             J2-2             5          0.018      *          *          0          0         
+C2-2             J2-2             OF-2             100        0.018      *          *          0          0         
+C1-2A            J1-2A            J2-2A            5          0.018      *          *          0          0         
+C2-2A            J2-2A            OF-2A            100        0.018      *          *          0          0         
+C1-3             J1-3             J2-3             5          0.018      *          *          0          0         
+C2-3             J2-3             OF-3             100        0.015      *          *          0          0         
+C1-3A            J1-3A            J2-3A            5          0.018      *          *          0          0         
+C2-3A            J2-3A            OF-3A            100        0.018      *          *          0          0         
+C1-3B            J1-3B            J2-3B            5          0.018      *          *          0          0         
+C2-3B            J2-3B            OF-3B            100        0.018      *          *          0          0         
+C1-A             J1-A             J2-A             5          0.025      *          *          0          0         
+C2-A             J2-A             OF-A             100        0.025      *          *          0          0         
+C-0-Z            J1               MC-Z             13.5       0.015      *          *          0          0         
+C-A-4            LAT-A            MC-4             227.4      0.015      *          *          0          0         
+
+[ORIFICES]
+;;Name           From Node        To Node          Type         Offset     Qcoeff     Gated    CloseTime 
+;;-------------- ---------------- ---------------- ------------ ---------- ---------- -------- ----------
+OR-0             ZamoraDam        J1               SIDE         *          0.65       NO       0.5       
+OR-Z             MC-Z             JZ-1             SIDE         21.495     0.65       NO       0         
+OR-1             MC-1             J1-1             SIDE         *          0.65       NO       0         
+OR-1A            MC-1A            J1-1A            SIDE         21.282     0.65       NO       0         
+OR-2             MC-2             J1-2             SIDE         *          0.65       NO       0         
+OR-2A            MC-2A            J1-2A            SIDE         21.026     0.65       NO       0         
+OR-3             MC-3             J1-3             SIDE         *          0.65       NO       0         
+OR-3A            MC-3A            J1-3A            SIDE         20.762     0.65       NO       0         
+OR-3B            MC-3B            J1-3B            SIDE         20.622     0.65       NO       0         
+OR-A             LAT-A            J1-A             SIDE         *          0.65       NO       0         
+
+[XSECTIONS]
+;;Link           Shape        Geom1            Geom2      Geom3      Geom4      Barrels    Culvert   
+;;-------------- ------------ ---------------- ---------- ---------- ---------- ---------- ----------
+C-Z-1            RECT_OPEN    1.2              1.65       0          0          1                    
+C-1-1A           RECT_OPEN    1.2              1.65       0          0          1                    
+C-1A-2           RECT_OPEN    1.2              1.65       0          0          1                    
+C-2-2A           RECT_OPEN    1.2              1.65       0          0          1                    
+C-2A-3           RECT_OPEN    1.2              1.65       0          0          1                    
+C-3-3A           RECT_OPEN    1.2              1.65       0          0          1                    
+C-3A-3B          RECT_OPEN    1.2              1.65       0          0          1                    
+C-3B-A           RECT_OPEN    1.2              1.65       0          0          1                    
+C1-Z             RECT_OPEN    0.4              0.4        0          0          1                    
+C2-Z             RECT_OPEN    0.4              0.4        0          0          1                    
+C1-1             RECT_OPEN    0.4              0.4        0          0          1                    
+C2-1             RECT_OPEN    0.4              0.4        0          0          1                    
+C1-1A            RECT_OPEN    0.4              0.4        0          0          1                    
+C2-1A            RECT_OPEN    0.4              0.4        0          0          1                    
+C1-2             RECT_OPEN    0.4              0.4        0          0          1                    
+C2-2             RECT_OPEN    0.4              0.4        0          0          1                    
+C1-2A            RECT_OPEN    0.4              0.4        0          0          1                    
+C2-2A            RECT_OPEN    0.4              0.4        0          0          1                    
+C1-3             RECT_OPEN    0.4              0.4        0          0          1                    
+C2-3             RECT_OPEN    5                3          0          0          1                    
+C1-3A            RECT_OPEN    0.4              0.4        0          0          1                    
+C2-3A            RECT_OPEN    0.4              0.4        0          0          1                    
+C1-3B            RECT_OPEN    0.4              0.4        0          0          1                    
+C2-3B            RECT_OPEN    0.4              0.4        0          0          1                    
+C1-A             RECT_OPEN    0.8              0.45       0          0          1                    
+C2-A             RECT_OPEN    0.8              0.45       0          0          1                    
+C-0-Z            RECT_OPEN    1.2              1.65       0          0          1                    
+C-A-4            RECT_OPEN    1.2              1.65       0          0          1                    
+OR-0             CIRCULAR     0.75             0          0          0
+OR-Z             CIRCULAR     0.381            0          0          0
+OR-1             CIRCULAR     0.381            0          0          0
+OR-1A            CIRCULAR     0.3              0          0          0
+OR-2             CIRCULAR     0.381            0          0          0
+OR-2A            CIRCULAR     0.3              0          0          0
+OR-3             CIRCULAR     0.381            0          0          0
+OR-3A            CIRCULAR     0.3              0          0          0
+OR-3B            CIRCULAR     0.3              0          0          0
+OR-A             CIRCULAR     0.61             0          0          0
+
+[CONTROLS]
+RULE OR-0
+IF SIMULATION TIME >= 5.0
+AND SIMULATION TIME <= 17.0
+THEN ORIFICE OR-0 SETTING = 0.382
+ELSE ORIFICE OR-0 SETTING = 0.0
+
+RULE OR-Z
+IF SIMULATION DATE = 5/1/2021
+AND SIMULATION TIME >= 5.0
+AND SIMULATION TIME <= 24.0
+THEN ORIFICE OR-Z SETTING = 1
+ELSE ORIFICE OR-Z SETTING = 0.0
+
+RULE OR-1
+IF SIMULATION DATE = 5/1/2021
+AND SIMULATION TIME >= 8.167
+AND SIMULATION TIME <= 24.0
+AND NODE J2-1 DEPTH <> 0.03
+THEN ORIFICE OR-1 SETTING = PID 0.05 0.1 0.0
+ELSE ORIFICE OR-1 SETTING = 0.0
+
+RULE OR-1A
+IF SIMULATION DATE = 5/1/2021
+AND SIMULATION TIME >= 5.0
+AND SIMULATION TIME <= 24.0
+THEN ORIFICE OR-1A SETTING = 1
+ELSE ORIFICE OR-1A SETTING = 0.0
+
+RULE OR-2
+IF SIMULATION DATE = 5/1/2021
+AND SIMULATION TIME >= 8.0
+AND SIMULATION TIME <= 24.0
+AND NODE J2-2 DEPTH <> 0.05
+THEN ORIFICE OR-2 SETTING = PID 0.05 0.1 0.0
+ELSE ORIFICE OR-2 SETTING = 0.0
+
+RULE OR-2A
+IF SIMULATION DATE = 5/1/2021
+AND SIMULATION TIME >= 5.0
+AND SIMULATION TIME <= 24.0
+THEN ORIFICE OR-2A SETTING = 1
+ELSE ORIFICE OR-2A SETTING = 0.0
+
+RULE OR-3
+IF SIMULATION DATE = 5/1/2021
+AND SIMULATION TIME >= 7.833
+AND SIMULATION TIME <= 24.0
+AND NODE J2-3 DEPTH <> 0.05
+THEN ORIFICE OR-3 SETTING = PID 0.05 0.1 0.0
+ELSE ORIFICE OR-3 SETTING = 0.0
+
+RULE OR-3A
+IF SIMULATION DATE = 5/1/2021
+AND SIMULATION TIME >= 5.0
+AND SIMULATION TIME <= 24.0
+THEN ORIFICE OR-3A SETTING = 1
+ELSE ORIFICE OR-3A SETTING = 0.0
+
+RULE OR-3B
+IF SIMULATION DATE = 5/1/2021
+AND SIMULATION TIME >= 5.0
+AND SIMULATION TIME <= 24.0
+THEN ORIFICE OR-3B SETTING = 1
+ELSE ORIFICE OR-3B SETTING = 0.0
+
+RULE OR-A
+IF SIMULATION DATE = 5/1/2021
+AND SIMULATION TIME >= 7.667
+AND SIMULATION TIME <= 24.0
+AND NODE J2-A DEPTH <> 0.4
+THEN ORIFICE OR-A SETTING = PID 0.4 0.1 0.0
+ELSE ORIFICE OR-A SETTING = 0.0
+
+
+[CURVES]
+;;Name           Type       X-Value    Y-Value   
+;;-------------- ---------- ---------- ----------
+TalibonDamIntake Rating     0          0         
+TalibonDamIntake            0.01       0.27991   
+TalibonDamIntake            0.02       0.30072   
+TalibonDamIntake            0.03       0.32153   
+TalibonDamIntake            0.04       0.34234   
+TalibonDamIntake            0.05       0.36315   
+TalibonDamIntake            0.06       0.38396   
+TalibonDamIntake            0.07       0.40477   
+TalibonDamIntake            0.08       0.42558   
+TalibonDamIntake            0.09       0.44639   
+TalibonDamIntake            0.10       0.4672    
+TalibonDamIntake            0.11       0.48801   
+TalibonDamIntake            0.12       0.50882   
+TalibonDamIntake            0.13       0.52963   
+TalibonDamIntake            0.14       0.55044   
+TalibonDamIntake            0.15       0.57125   
+TalibonDamIntake            0.16       0.59206   
+TalibonDamIntake            0.17       0.61287   
+TalibonDamIntake            0.18       0.63368   
+TalibonDamIntake            0.19       0.65449   
+TalibonDamIntake            0.20       0.6753    
+TalibonDamIntake            0.21       0.69611   
+TalibonDamIntake            0.22       0.71692   
+TalibonDamIntake            0.23       0.73773   
+TalibonDamIntake            0.24       0.75854   
+TalibonDamIntake            0.25       0.77935   
+TalibonDamIntake            0.26       0.80016   
+TalibonDamIntake            0.27       0.82097   
+TalibonDamIntake            0.28       0.84178   
+TalibonDamIntake            0.29       0.86259   
+TalibonDamIntake            0.30       0.8834    
+TalibonDamIntake            0.31       0.90421   
+TalibonDamIntake            0.32       0.92502   
+TalibonDamIntake            0.33       0.94583   
+TalibonDamIntake            0.34       0.96664   
+TalibonDamIntake            0.35       0.98745   
+TalibonDamIntake            0.36       1.00826   
+TalibonDamIntake            0.37       1.02907   
+TalibonDamIntake            0.38       1.04988   
+TalibonDamIntake            0.39       1.07069   
+TalibonDamIntake            0.40       1.0915    
+TalibonDamIntake            0.41       1.11231   
+TalibonDamIntake            0.42       1.13312   
+TalibonDamIntake            0.43       1.15393   
+TalibonDamIntake            0.44       1.17474   
+TalibonDamIntake            0.45       1.19555   
+TalibonDamIntake            0.46       1.21636   
+TalibonDamIntake            0.47       1.23717   
+TalibonDamIntake            0.48       1.25798   
+TalibonDamIntake            0.49       1.27879   
+TalibonDamIntake            0.50       1.2996    
+TalibonDamIntake            0.51       1.32041   
+TalibonDamIntake            0.52       1.34122   
+TalibonDamIntake            0.53       1.36203   
+TalibonDamIntake            0.54       1.38284   
+TalibonDamIntake            0.55       1.40365   
+;
+;Zamora dam rule curve
+ZamoraDam        Storage    1.5        1000000.00
+ZamoraDam                   2          1279545.45
+ZamoraDam                   2.5        1559090.91
+ZamoraDam                   3          1838636.36
+ZamoraDam                   3.5        2118181.82
+ZamoraDam                   4          2397727.27
+ZamoraDam                   4.5        2677272.73
+ZamoraDam                   5          2956818.18
+ZamoraDam                   5.5        3236363.63
+ZamoraDam                   6          3515909.06
+ZamoraDam                   6.5        3795454.54
+ZamoraDam                   7          4075000.00
+ZamoraDam                   7.5        4612500.00
+ZamoraDam                   8          5150000.00
+ZamoraDam                   8.5        5666500.00
+ZamoraDam                   9          6183000.00
+ZamoraDam                   9.5        6527567.00
+
+[REPORT]
+;;Reporting Options
+SUBCATCHMENTS ALL
+NODES ALL
+LINKS ALL
+
+[TAGS]
+Node       OF-Z             ZABIMOPA        
+Node       OF-1             ZABIMOPA        
+Node       OF-1A            ZABIMOPA        
+Node       OF-2             ZABIMOPA        
+Node       OF-2A            ZABIMOPA        
+Node       OF-3             ZABIMOPA        
+Node       OF-3A            ZABIMOPA        
+Node       OF-3B            ZABIMOPA        
+Node       OF-A             ZABIMOPA,BUNLAYA,PANAS
+Link       OR-Z             ZABIMOPA        
+Link       OR-1             ZABIMOPA        
+Link       OR-1A            ZABIMOPA        
+Link       OR-2             ZABIMOPA        
+Link       OR-2A            ZABIMOPA        
+Link       OR-3             ZABIMOPA        
+Link       OR-3A            ZABIMOPA        
+Link       OR-3B            ZABIMOPA        
+Link       OR-A             ZABIMOPA,BUNLAYA,PANAS
+
+[MAP]
+DIMENSIONS -2075.015 0.000 12075.015 10000.000
+Units      None
+
+[COORDINATES]
+;;Node           X-Coord            Y-Coord           
+;;-------------- ------------------ ------------------
+J1               1800.232           3175.813          
+MC-Z             1853.949           3213.560          
+MC-1             1936.101           3268.230          
+MC-1A            2095.219           3357.144          
+MC-2             2281.622           3283.131          
+MC-2A            2418.684           3335.215          
+MC-3             2764.078           3428.416          
+MC-3A            3029.978           3513.394          
+MC-3B            3611.118           3296.837          
+LAT-A            3871.535           3209.118          
+J1-1             1954.046           3229.677          
+J2-1             1973.234           3187.188          
+J1-1A            2095.219           3311.914          
+J2-1A            2096.589           3263.943          
+J1-2             2281.622           3244.754          
+J2-2             2284.364           3189.930          
+J1-2A            2439.243           3294.096          
+J2-2A            2463.914           3250.237          
+J1-3             2765.449           3387.298          
+J2-3             2764.078           3344.809          
+J1-3A            3027.236           3465.423          
+J2-3A            3027.236           3422.934          
+J1-3B            3572.741           3274.908          
+J2-3B            3530.252           3250.237          
+J1-A             3867.423           3124.140          
+J2-A             3859.199           3080.280          
+JZ-1             1872.822           3188.516          
+JZ-2             1889.518           3165.287          
+OF-Z             1909.843           3138.429          
+OF-1             1989.682           3144.699          
+OF-1A            2097.960           3215.971          
+OF-2             2285.734           3143.329          
+OF-2A            2494.068           3199.524          
+OF-3             2762.708           3300.949          
+OF-3A            3025.866           3374.962          
+OF-3B            3491.875           3221.454          
+OF-A             3853.717           3019.973          
+MC-4             4090.833           3099.469          
+ZamoraDam        1508.420           3287.602          
+
+[VERTICES]
+;;Link           X-Coord            Y-Coord           
+;;-------------- ------------------ ------------------
+C-1-1A           2043.136           3355.774          
+C-2A-3           2610.570           3414.710          
+C-3-3A           2824.386           3438.011          
+C-3A-3B          3114.956           3454.458          
+C-3A-3B          3441.162           3388.669          
+C-3A-3B          3549.440           3413.340          
+C-3B-A           3665.943           3218.712          
+C-A-4            3985.192           3194.323          
+OR-0             1710.221           3249.855          
+
+
+[BACKDROP]
+FILE       "D:\IHE_Delft\Module 14_Thesis\NIA\Talibon\CAD_Files\TALIBON GENERAL LAYOUT OF TURNOUT-1.png"
+DIMENSIONS -2075.015 0.000 12075.015 10000.000
